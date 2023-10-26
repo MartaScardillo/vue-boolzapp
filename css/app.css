@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bfc0c0;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: #04A784;
+    height: 150px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.icon {
+    color: gray;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.container {
+    margin: -125px auto;
+    width: 1350px;
+    height: 900px;
+    background-color: white;
+}
+
+
+
+.box_contacts {
+    height: 100%;
+    width: 35%;
+}
+
+.box_chats {
+    height: 100%;
+    width: 65%;
+}
+
+
+
+.contacts_header {
+    height: 75px;
+    background-color: #dcddde;
+    padding: 10px;
+}
+
+
+
+.user_image {
+    width: 50px;
+    border-radius: 50%;
+}
+
+
+
+/* DEBUG */
+
+.debug .box_contacts {
+    border: 1px purple solid;
+}
+
+.debug .box_chats {
+    border: 1px pink solid;
+}
