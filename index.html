@@ -47,10 +47,48 @@
                     <input type="text" placeholder="Cerca o inizia una nuova chat" class="search_bar">
                 </nav>
 
+                <div>
+                    <ul class="contacts_chats">
+                        <li class="contact_chat d-flex">
+                            <img class="contact_image" src="./img/avatar_1.jpg" alt="">
+                            <div class="details_container d-flex justify-between">
+                                <div class="details d-flex flex-column">
+                                    <span class="contact_name">Michele</span>
+                                    <span class="message_preview">Ultimo messaggio inviato</span>
+                                </div>
+                                <div class="time">
+                                    <span>12:00</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="box_chats">
+                <div class="contacts_header chat_header d-flex align-items-center justify-between">
 
+                    <div class="user d-flex align-items-center">
+                        <img class="user_image" src="./img/avatar_io.jpg" alt="">
+                        <div class="details d-flex flex-column">
+                            <span class="contact_name">Michele</span>
+                            <span class="message_preview">Ultimo accesso oggi alle 12:00</span>
+                        </div>
+                    </div>
+
+                    <div class="header_icons">
+                        <span class="icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span class="icon"><i class="fa-solid fa-paperclip"></i></span>
+                        <span class="icon"><i class="fa-solid fa-burger"></i></span>
+                    </div>
+
+                </div>
+
+                <div class="contacts_header chat_text-bar d-flex justify-around align-items-center">
+                    <span><i class="fa-regular fa-face-tired"></i></span>
+                    <input class="write_message" type="text" placeholder="Scrivi un messaggio">
+                    <span><i class="fa-solid fa-microphone"></i></span>
+                </div>
             </div>
         </div>
     </main>
