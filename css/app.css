@@ -17,6 +17,10 @@ header {
     height: 150px;
 }
 
+a {
+    color: rgba(98, 97, 97, 0.802);
+}
+
 .d-flex {
     display: flex;
 }
@@ -27,6 +31,16 @@ header {
     font-size: 20px;
 }
 
+.bell_icon {
+    background-color: white;
+    color: aqua;
+    border-radius: 50%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+}
+
 .align-items-center {
     align-items: center;
 }
@@ -34,6 +48,16 @@ header {
 .justify-between {
     justify-content: space-between;
 }
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+
 
 .container {
     margin: -125px auto;
@@ -62,11 +86,21 @@ header {
     padding: 10px;
 }
 
+.notifications {
+    background-color: aqua;
+    height: 80px;
+    padding: 10px;
+}
+
 
 
 .user_image {
     width: 50px;
     border-radius: 50%;
+}
+
+.text {
+    padding-left: 15px;
 }
 
 
