@@ -186,6 +186,14 @@ a {
     border-radius: 5px;
 }
 
+.white_message {
+    background-color: white;
+}
+
+.green_message {
+    background-color: greenyellow;
+}
+
 
 
 /* DEBUG */
