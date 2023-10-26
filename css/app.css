@@ -92,6 +92,11 @@ a {
     padding: 10px;
 }
 
+.search {
+    background-color: #eef0f1;
+    padding: 10px;
+}
+
 
 
 .user_image {
@@ -103,6 +108,23 @@ a {
     padding-left: 15px;
 }
 
+.search_button {
+    width: 20%;
+    height: 36px;
+    border: none;
+    background: white;
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+  }
+
+  .search_bar {
+    width: 80%;
+    height: 36px;
+    border: none;
+    padding: 5px;
+    outline: none;
+  }
 
 
 /* DEBUG */
