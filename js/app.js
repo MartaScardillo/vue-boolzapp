@@ -181,6 +181,14 @@ createApp({
             this.currentIndex = index;
         },
 
+        botResponse() {
+            this.contacts[this.currentIndex].messages.push({
+                date: '10/01/2020 15:30:55',
+                message: 'ok',
+                status: 'received',
+            });
+        },
+
         sendMessage() {
             this.contacts[this.currentIndex].messages.push({
                 date: '10/01/2020 15:30:55',
@@ -189,6 +197,8 @@ createApp({
             });
 
             this.newMessage = '';
+
+            setTimeout(this.botResponse, 1000);
         },
     },
 }).mount('#app');
