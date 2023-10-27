@@ -181,17 +181,12 @@ createApp({
             this.currentIndex = index;
         },
 
-        sendMessage(event) {
-            if (event == 'Enter') {
-                if (this.newMessage.length >= 1) {
-                    
-                    this.messages[this.currentIndex].push({
-                        date: '10/01/2020 15:30:55',
-                        message: this.newMessage,
-                        status: 'sent',
-                    });
-                }
-            }
+        sendMessage() {
+            this.contacts[this.currentIndex].messages.push({
+                date: '10/01/2020 15:30:55',
+                message: this.newMessage,
+                status: 'sent',
+            });
         },
     },
 }).mount('#app');
