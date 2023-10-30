@@ -13,7 +13,7 @@
     <body id="app">
         <header></header>
 
-        <main class="debug">
+        <main>
             <div class="container d-flex">
                 <div class="box_contacts">
                     <div
@@ -61,6 +61,7 @@
                             type="text"
                             placeholder="Cerca o inizia una nuova chat"
                             class="search_bar"
+                            v-model="contactSearch"
                         />
                     </nav>
 
@@ -68,7 +69,7 @@
                         <ul class="contacts_chats">
                             <li
                                 class="contact_chat d-flex"
-                                v-for="(contact, index) in contacts"
+                                v-for="(contact, index) in searchContacts()"
                                 :key="index"
                                 @click="chatIndex(index)"
                             >

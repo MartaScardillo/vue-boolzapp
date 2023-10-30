@@ -213,15 +213,3 @@ a {
 .sent {
     background-color: greenyellow;
 }
-
-
-
-/* DEBUG */
-
-/* .debug .box_contacts {
-    border: 1px purple solid;
-} */
-
-.debug .box_chats {
-    border: 1px pink solid;
-}

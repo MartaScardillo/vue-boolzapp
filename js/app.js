@@ -5,6 +5,7 @@ createApp({
         return {
             currentIndex: 0,
             newMessage: '',
+            contactSearch: '',
             contacts: [
                 {
                     name: 'Michele',
@@ -199,6 +200,21 @@ createApp({
             this.newMessage = '';
 
             setTimeout(this.botResponse, 1000);
+        },
+
+        searchContacts() {
+            if (this.contactSearch && this.contactSearch !== '') {
+                const searchArray = [];
+                for (let i = 0; i < this.contacts.length; i++) {
+                    const contact = this.contacts[i]
+                    if (contact.name.toLowerCase().includes(this.contactSearch.toLowerCase())) {
+                        searchArray.push(contact)
+                    }
+                }    
+                return searchArray;
+            } else {
+                return this.contacts;
+            }
         },
     },
 }).mount('#app');
